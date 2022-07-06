@@ -1,0 +1,43 @@
+.app__form-input-record {
+  text-align: left;
+}
+.app__form-input-record:hover {
+  //   background-color: rgb(128, 166, 255);
+  //   transition: all 0.8s ease-in-out;
+}
+
+.app__form-input-record {
+  input:hover {
+    background-color: rgb(209, 239, 228);
+    transition: all 0.8s ease-in-out;
+  }
+  input:focus {
+    background-color: rgb(155, 219, 197);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .errorMsg {
+    color: red;
+    font-size: small;
+    font-weight: 100;
+    text-align: left;
+
+    display: none;
+  }
+
+  input:invalid[wasfocused="true"] {
+    border-color: red;
+    
+    ~ .errorMsg {
+      display: block;
+    }
+
+    
+ 
+    
+  }
+
+  input:invalid {
+    color: rgb(187, 0, 0);
+  }
+}
